@@ -1,0 +1,14 @@
+<div class="container">
+  <app-user [user]="user"></app-user>
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a href="" class="nav-link" [routerLink]="['repos']" routerLinkActive="nav__item_selected">Dépôts</a>
+    </li>
+    <li class="nav-item">
+      <a href="" class="nav-link" [routerLink]="['followers']" routerLinkActive="nav__item_selected">Followers</a>
+    </li>
+  </ul>
+
+  <router-outlet></router-outlet>
+</div>
